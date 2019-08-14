@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DQ Test Page</title>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="stylesheet/index.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+</head>
+
+<body class="mdc-typography">
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" id="avatar">
+        <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list--non-interactive">
+          <li class="mdc-list-item">
+            <img class="mdc-list-item__graphic" src="imgs/narita.png">
+          
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">Narita Sabharwal</span>
+              <span class="mdc-list-item__secondary-text">Monday, 10th May</span>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" id="toolbar">
+        <span class="notifications mdc-typography--body2">Notifications</span>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button">person_add</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button">settings</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button">power_settings_new</button>
+      </section>
+    </div>
+  </header>
+
+  <main class="main-content" id="main-content">
+    <div class="mdc-top-app-bar--fixed-adjust">
+
+      <div class="mdc-card">
+        <div class="profile">
+          <img class="profile-image" src="imgs/narita.png">
+          <div class="profile-details">
+            <div>Narita Sabharwal (25, Female)</div>
+            <div>IN, New Delhi (Civil Lines)</div>
+            <div>Educational background: Will be auto-detected</div>
+            <div>Alma mater: Will be auto-detected</div>
+            <div>Core strength: Will be auto-detected</div> 
+          </div>
+        </div>
+
+        <div class="tab-bar mdc-elevation--z5">
+          <div class="active tab">Academic background</div>
+          <div class="tab">Work experience</div>
+          <div class="tab">Extra & Co-ciricular</div>
+        </div>
+
+        <div class="mdc-layout-grid mdc-layout-grid--align-left">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Level of education</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Name of institute">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+                <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                  <input type="text" class="mdc-text-field__input" placeholder="Institute location">
+                  <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Name of course">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Affiliated to</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Name of affliate body">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Year of graduation</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Specialized in">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Marks scored (in %)">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Hard skills developed</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Languages learnt/used</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-label">
+          Critical project #1
+        </div>
+
+        <div class="mdc-layout-grid mdc-layout-grid--align-left">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Project title">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Industry</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Sub-industry</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Function</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>No. of team members</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Hard skills utilized</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Soft skills utilized</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Most apt statement decribing your role</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Project duration</option>
+              </select>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="header-label">
+          Position of responsibility #1
+        </div>
+
+        <div class="mdc-layout-grid mdc-layout-grid--align-left">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Title">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Level</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--with-trailing-icon">
+                <input type="text" class="mdc-text-field__input" placeholder="Name of entity being led/managed">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">edit</i>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Type of entity</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Focus of entity</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Competitiveness</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Team size</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Hard skills utilized</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Soft skills utilized</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Start date</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>Most apt statement decribing your role</option>
+              </select>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-bottom">
+              <select class="dropdown mdc-typography">
+                <option value="" disabled selected>End date</option>
+              </select>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="header-label">
+          Add another critical project
+        </div>
+        <div class="header-label">
+          Add another position of responsibility
+        </div>
+
+        <div class="button-group">
+          <div class="buttons mdc-buttons">
+            <button class="button">Delete</button>
+            <button class="button">Close</button>
+            <button class="button">Save</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="side-bar" id="side-bar">
+        <div class="header">
+          <i class="material-icons">
+            fingerprint
+          </i>
+          As you fill-up your profile, this section will show relevant opportunities
+        </div>
+
+        <div class="label">
+          How do you value this factors
+        </div>
+
+        <div class="sliders">
+          <div>
+            <div class="slider__title">
+              Renumeration
+            </div>
+            <div class="range__text">
+              <span class="left-range">Matters little</span>
+              <span class="right-range">Most important</span>
+            </div>
+            <div class="mdc-slider" tabindex="0" role="slider">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <svg class="mdc-slider__thumb" width="56" height="56">
+                  <circle cx="28" cy="28" r="20" fill="white" stroke="none"></circle>
+                </svg>
+            </div>
+          </div>
+
+          <div>
+            <div class="slider__title">
+              Company size
+            </div>
+            <div class="range__text">
+              <span class="left-range">Matters little</span>
+              <span class="right-range">Most important</span>
+            </div>
+            <div class="mdc-slider" tabindex="0" role="slider">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <svg class="mdc-slider__thumb" width="56" height="56">
+                  <circle cx="28" cy="28" r="20" fill="white" stroke="none"></circle>
+                </svg>
+            </div>
+          </div>
+          
+          <div>
+            <div class="slider__title">
+              Location
+            </div>
+            <div class="range__text">
+              <span class="left-range">Matters little</span>
+              <span class="right-range">Most important</span>
+            </div>
+            <div class="mdc-slider" tabindex="0" role="slider">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <svg class="mdc-slider__thumb" width="56" height="56">
+                  <circle cx="28" cy="28" r="20" fill="white" stroke="none"></circle>
+                </svg>
+            </div>
+          </div>
+
+          <div class="relocate">
+            <div class="mdc-form-field">
+              <div class="mdc-checkbox">
+                <input type="checkbox"
+                        class="mdc-checkbox__native-control"
+                        id="checkbox-1"/>
+                <div class="mdc-checkbox__background">
+                  <svg class="mdc-checkbox__checkmark"
+                        viewBox="0 0 24 24">
+                    <path class="mdc-checkbox__checkmark-path"
+                          fill="none"
+                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                  </svg>
+                </div>
+              </div>
+              <label for="checkbox-1">
+                <select class="dropdown mdc-typography">
+                  <option value="" disabled selected>Willing to migrate to:</option>
+                </select>
+              </label>
+            </div>
+            <button class="sidebar-button">Awaiting more input</button>
+          </div>
+
+        </div>
+       
+      </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="mdc-footer" id="footer">
+    <ul>
+      <li>About us</li>
+      <li>Contact us</li>
+      <li>Terms & conditions</li>
+      <li>Privacy policy</li>
+      <li>FAQs</li>
+      <li>Blog</li>
+    </ul>
+  </footer>
+</body>
+
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="javascript/index.js"></script>
+
+</html>
