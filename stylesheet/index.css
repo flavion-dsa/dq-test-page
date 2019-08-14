@@ -38,9 +38,10 @@ body {
 }
 
 #toolbar .mdc-icon-button {
+  margin-left: 8px;
   color: var(--mdc-background-color);
   background-color: #cbcbcb;
-  clip-path: circle(40% at center);
+  border-radius: 360px;
 }
 
 /* Main */
